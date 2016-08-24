@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="keywords" content="Изготовление визиток"/>
+    <meta name="description" content="Оперативное изготовление визиток от 1 часа"/>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/theme-default.min.css"
+          rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Сделать заказ</title>
+</head>
+<body>
+<div class="form">
+    <form name="order" method="post" action="send.php" id="orderForm">
+        <ul>
+            <li>
+                <span>Введите ваше имя</span><br/>
+                <input name="name"/>
+            </li>
+            <li>
+                <span>Введите ваш E-mail</span><br/>
+                <input name="email"/>
+            </li>
+            <li>
+                <span>Введите ваш телефон (10 цифр без пробелов и тире)</span><br/>
+                <input name="phone"/>
+            </li>
+            <li>
+                <span>Что заказываете</span><br/>
+                <select name="service">
+                    <option disabled>-- Выберите тип услуги --</option>
+                    <option>Визитки</option>
+                    <option>Буклеты</option>
+                    <option>Листовки</option>
+                    <option>Календари</option>
+                </select>
+            </li>
+            <li>
+                <span>Введите количество</span><br/>
+                <input type="number" name="amount"/>
+            </li>
+            <li>
+                <span>Нужен ли вам дизайн</span><br/>
+                <label id="design-error" class="error" for="design">This field is required.</label><br/>
+
+                <input type="radio" name="design" value="Дизайн нужен" class="required"/><span>Да, нужен</span><br/>
+                <input type="radio" name="design" value="Дизайн не нужен"/><span>Нет, не нужен</span><br/>
+            </li>
+            <li>
+                <span>Коментарий к заказу</span><br/>
+                <textarea name="comment"></textarea>
+            </li>
+            <li>
+                <input class="button" type="submit" name="submit"/>
+            </li>
+        </ul>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
+<script src="js/orderFormValidation.js" content="text/javascript; charset=utf-8">
+</script>
+
+</body>
+</html>

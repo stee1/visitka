@@ -1,0 +1,648 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-shadow: none;
+}
+
+a img {
+    border: none;
+}
+
+body {
+    min-width: 280px;
+    width: 100%;
+    height: auto;
+    background-color: #20588c;
+}
+
+
+h1 {
+    font: bold 28px Tahoma;
+    color: #4d4e4e;
+    padding: 2% 0 10% 0;
+    text-align: center;
+}
+
+
+h2 {
+    font: bold 26px Tahoma;
+    color: #4d4e4e;
+    padding: 2% 0 5% 0;
+}
+
+h3 {
+    font: bold 24px Tahoma;
+    color: #4d4e4e;
+    padding: 2% 0 10% 0;
+}
+
+.center {
+    display: block;
+    margin: 0 auto 1% auto;
+}
+
+#layout {
+    width: 90%;
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto 30px auto;
+}
+
+#header {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#header p {
+    font: 18px Impact;
+    color: #fcfdfd;
+    float: right;
+    margin: 60px 20px 0 0;
+    text-align: right;
+}
+
+#header p span {
+    font-size: 20px;
+    color: #aad6fe;
+}
+
+#menu {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1%;
+    overflow: hidden;
+    border-radius: 5px;
+
+    background: -ms-linear-gradient(bottom,  #0a1f32 0%, #0f2c47 100%); /* IE10+ */
+    background-image: -moz-linear-gradient(bottom, #0a1f32 0%, #0f2c47 100%); /* gradient overlay */
+    background-image: -o-linear-gradient(bottom, #0a1f32 0%, #0f2c47 100%); /* gradient overlay */
+    background-image: -webkit-linear-gradient(bottom, #0a1f32 0%, #0f2c47 100%); /* gradient overlay */
+    background-image: linear-gradient(bottom, #0a1f32 0%, #0f2c47 100%); /* gradient overlay */
+}
+
+#menu li {
+    float: left;
+    list-style: none;
+    margin: 2% 8% 2% 3%;
+}
+
+#menu li a {
+    font: 18px Tahoma;
+    color: #aad6fe;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+#menu li a:hover, #menu li a.current {
+    text-shadow: 0 0 10px #d0e7fc;
+    text-decoration: underline;
+}
+
+#menu ul.topnav li.icon {
+    display: none;
+}
+
+#content {
+    height: auto;
+    padding: 2% 2% 0 2%;
+    background: #f4f5f5;;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    -webkit-box-shadow: 0 7px 20px #000000;
+    -moz-box-shadow: 0 7px 20px #000000;
+    box-shadow: 0 7px 20px #000000;
+}
+
+#pic {
+    margin: 0 0 2% 0;
+    padding: 0 0 2% 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #bfbebe;
+}
+
+#pic img {
+    float: left;
+    margin: 10px 20px 0 0;
+}
+
+#pic ul {
+    margin: 2% 0 4% 0;
+}
+
+#pic ul li {
+    font: 23px Tahoma;
+    color: #2e2e2e;
+    list-style: none;
+    margin: 15px 0;
+}
+
+.button {
+    font: 20px Tahoma;
+    text-decoration: none;
+    color: #444545;
+    font-weight: 400;
+    margin: 10px 0;
+    padding: 5px 25px;
+
+    border-radius: 5px;
+    border: 1px solid #d2d2d2;
+
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,.56); /* drop shadow */
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.56); /* drop shadow */
+    box-shadow: 0 2px 4px rgba(0,0,0,.56); /* drop shadow */
+
+    background-image: -moz-linear-gradient(bottom, #eae9e9 0%, #f1f0f0 100%); /* gradient overlay */
+    background-image: -o-linear-gradient(bottom, #eae9e9 0%, #f1f0f0 100%); /* gradient overlay */
+    background-image: -webkit-linear-gradient(bottom, #eae9e9 0%, #f1f0f0 100%); /* gradient overlay */
+    background-image: linear-gradient(bottom, #eae9e9 0%, #f1f0f0 100%); /* gradient overlay */
+}
+
+#text {
+    width: 67%;
+    height: auto;
+    float: left;
+    padding: 0 0 5% 0;
+}
+
+#text p {
+    font: 18px Tahoma;
+    color: #4d4e4e;
+    padding: 0 0 2% 0;
+}
+
+#text ul {
+    margin: 0 0 6% 6%;
+}
+
+#text li {
+    font: 18px Tahoma;
+    color: #4d4e4e;
+    list-style: url(../images/tick.png);
+}
+
+#text a {
+    font: 18px Tahoma;
+    color: #024282;
+    text-decoration: underline;
+}
+
+#text a:hover {
+    text-decoration: none;
+}
+
+#sidebar {
+    width: 30%;
+    height: auto;
+    float: right;
+}
+
+.contacts, .social {
+    background: url("../images/fon.png");
+    border: 1px solid #969292;
+    border-radius: 5px;
+    margin: 0 0 6% 0;
+    padding: 0 0 17% 4%;
+}
+
+.social img {
+    padding: 5px 10px 0 0;
+    opacity: 0.8;
+}
+
+.social img:hover {
+    opacity: 1;
+}
+
+
+.contacts p {
+    font: 18px Tahoma;
+    color: #494a4a;
+}
+
+.contacts p a {
+    color: #024282;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.contacts p a:hover {
+    text-decoration: underline;
+
+}
+
+.contacts h3, .social h3 {
+    font: bold 18px Tahoma;
+    color: #fdfeff;
+    text-transform: uppercase;
+    margin: 5px 0 5px 0;
+    padding: 5px 0 15px 13px;
+    position: relative;
+    left: -5.5%;
+}
+
+.contacts h3 {
+    background: url("../images/h3-red.png") no-repeat top right;
+}
+
+.social h3 {
+    background: url("../images/h3-blue.png") no-repeat top right;
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    background: #2b2b2b;;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    -webkit-box-shadow: 0 7px 20px #000000;
+    -moz-box-shadow: 0 7px 20px #000000;
+    box-shadow: 0 7px 20px #000000;
+}
+
+#footer ul {
+    padding: 2% 0 0 2%;
+    overflow: hidden;
+}
+
+#footer ul li {
+    list-style: none;
+    margin: 0 5% 0 0;
+    float: left;
+}
+
+#footer ul li a {
+    font: 18px Tahoma;
+    color: #f2f4f5;
+    text-decoration: none;
+}
+
+#footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Форма обратной связи*/
+iframe {
+    border: none !important;
+    width: 100%;
+    height: 600px;
+}
+
+.form {
+    min-width: 180px;
+    width: 100%;
+    margin: 0 auto;
+    color: #222;
+}
+
+.form input, .form select, .form textarea {
+    width: 100%;
+    padding: 8px 16px;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f4f5f5;
+    -webkit-box-shadow: 1px 2px 7px #444545;
+    -moz-box-shadow: 1px 2px 7px #444545;
+    box-shadow: 0px 2px 7px #444545;
+}
+
+.form textarea {
+    height: 100px;
+    resize: none;
+}
+
+
+.form input:focus, .form select:focus, .form textarea:focus {
+    background-color: #e2f7fd;
+}
+
+.form input[type="radio"] {
+    width: auto;
+    margin: 8px 16px;
+}
+
+.form input[type=submit] {
+    border: none;
+    cursor: pointer;
+}
+
+.form input[type=submit]:hover {
+    background: #e3e2e2;
+}
+
+.form select {
+    font: 14px Tahoma;
+
+}
+
+.form span {
+    font: 16px Tahoma;
+    margin-bottom: 20px;
+}
+
+.form ul {
+    padding: 2% 3% 1% 2%;
+}
+
+.form ul li {
+    list-style: none;
+    margin: 0 0 10px 0;
+}
+
+.form h1 {
+    font: bold 32px Tahoma;
+    color: #ddd;
+    padding: 0;
+}
+
+.form p {
+    font: 18px Tahoma;
+    color: #ddd;
+    text-align: center;
+}
+
+/***************ORDER FORM VALIDATION ****************/
+select {
+    background-position: right 15px center !important;
+}
+
+input {
+    background-position: right 10px center !important;
+}
+
+input[type=number] {
+    background-position: right 0px center !important;
+}
+.error {
+    color: #b94a48 !important;
+
+}
+
+#design-error {
+    display: none;
+}
+/***************END ORDER FORM VALIDATION ****************/
+
+.no_border {
+    border: none;
+}
+
+.center_vertical {
+    padding: 183px 0 0 0;
+    /*height: 488px;*/
+}
+
+@media screen and (min-width: 531px) and (max-width: 970px) {
+    #menu li {
+        margin: 2% 0;
+        width: 20%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 888px) {
+    #pic {
+        padding: 0 0 6% 0;
+    }
+    
+    .button {
+        margin: 1% 0;
+        padding: 2% 10%;
+    }
+
+    #pic img {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    #pic ul, #pic p {
+        text-align: center;
+    }
+
+    #text {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    #sidebar {
+        width: 100%;
+        float: none;
+        overflow: hidden;
+    }
+
+    .contacts, .social {
+        float: left;
+        width: 44%;
+        margin: 0 0 3% 0;
+        padding: 0 2% 4% 2%;
+    }
+
+    .contacts {
+        margin: 0 0 3% 2px;
+    }
+
+    .social {
+        float: right;
+    }
+}
+
+@media screen and (max-width: 514px) {
+    #header p {
+        margin: 0 20px 0 0;
+    }
+}
+
+@media screen and (max-width: 531px) {
+    iframe {
+       width: 340px;
+    }
+
+    .center {
+        width: 100%;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    #text p, #text li, #text a, .contacts p {
+        font-size: 16px;
+    }
+
+    #pic img {
+        width: 100%;
+    }
+
+    #pic ul li {
+        font: 18px Tahoma;
+    }
+
+
+
+    #footer {
+        padding: 0 0 10% 0;
+    }
+
+    #footer ul li {
+        padding: 2% 1% 6% 1%;
+    }
+
+    #menu ul {
+        margin: 0 3% 0 4%;
+    }
+
+    #menu li {
+        margin: 4% 8% 3% 0;
+    }
+
+
+    /*mobile menu*/
+
+
+    #menu ul.topnav li:not(:first-child) {
+        display: none;
+    }
+
+    #menu ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
+
+    #menu ul.topnav li.icon a{
+        margin-right: -20px;
+    }
+
+    #menu ul.topnav.responsive {
+        position: relative;
+    }
+
+    #menu ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    #menu ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+
+    #menu ul.topnav.responsive li a {
+        transition: 0.3s;
+        display: block;
+        text-align: left;
+    }
+
+    .modal-content {
+        width: 335px !important;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .contacts, .social {
+        width: 95%;
+    }
+
+    .social {
+        clear: both;
+    }
+}
+
+/* TABLET TOPNAV FIREFOX */
+@-moz-document url-prefix() {
+    @media screen and (min-width: 531px) and (max-width: 970px) {
+        #menu li {
+            margin: 2% 0;
+            width: 20%;
+            text-align: center;
+        }
+
+    }
+}
+
+/***************** MODAL WINDOW ******************/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 2%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4);  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #20588c;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 503px;
+    height: 604px;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/************* END MODAL WINDOW ********************/
+
+/*hide scrollbar*/
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
